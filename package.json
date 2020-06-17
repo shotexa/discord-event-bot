@@ -1,0 +1,38 @@
+{
+  "name": "discord-event-bot",
+  "version": "1.0.0",
+  "description": "discord event bot",
+  "main": "dist/index.js",
+  "author": "Shota jolbordi",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/mongoose": "^5.7.24",
+    "@types/node": "^14.0.13",
+    "@typescript-eslint/eslint-plugin": "^3.3.0",
+    "@typescript-eslint/parser": "^3.3.0",
+    "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.5"
+  },
+  "scripts": {
+    "start": "node dist",
+    "watch": "tsc -w --project ./",
+    "start:dev": "nodemon dist --watch 'dist/' --ignore 'src/**/*.test.ts'",
+    "lint": "eslint --fix 'src/**/*.ts'"
+  },
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "mongoose": "^5.9.18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shotexa/discord-event-bot.git"
+  },
+  "engines": {
+    "node": ">=12"
+  }
+}

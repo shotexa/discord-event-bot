@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "module": "CommonJS",
+      "target": "ES2019",
+      "strict": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "moduleResolution": "node",
+      "outDir": "dist",
+      "baseUrl": ".",
+      "paths": {
+        "@src/*":["src/*"]
+      },
+      "noImplicitReturns": true,
+      "forceConsistentCasingInFileNames": true,
+      "noUnusedLocals": true
+    },
+    "include": ["src/**/*.ts"]
+  }
