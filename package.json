@@ -20,6 +20,7 @@
   },
   "scripts": {
     "start": "node dist",
+    "transpile": "tsc --project ./",
     "watch": "tsc -w --project ./",
     "start:dev": "nodemon dist --watch 'dist/' --ignore 'src/**/*.test.ts'",
     "lint": "eslint --fix 'src/**/*.ts'"
