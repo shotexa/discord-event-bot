@@ -1,5 +1,16 @@
-import * as http from 'http';
+import { Client, Message } from 'discord.js';
+import config from '@src/config';
+import messages from '@src/messages';
 
-http.createServer((req, res) => {
-    res.end('response');
-}).listen(3000);
+const bot = new Client();
+
+bot.on('message', async (msg: Message) => {
+    console.info(`Got message from ${msg.author}: ${msg.content}`);
+    if (messages[msg.content]) {
+        const handler = messages[msg.content];
+        const response = await handler(msg);
+        msg.reply(response);
+    }
+});
+
+bot.login(config.botToken);
