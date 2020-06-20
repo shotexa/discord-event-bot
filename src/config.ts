@@ -1,4 +1,4 @@
 export default {
-    botToken: 'NzIzNjkyOTA3MTIyNjU1MjYz.Xu2HEw.7afwucGW4g4mfmu-syBVcSgSKl8',
+    botToken: 'NzIzNjkyOTA3MTIyNjU1MjYz.Xu2eRA.kwu1w0pJUdxXGDvy4pVLdcbwx-E',
     botMessagePrefix: '!event ',
 };

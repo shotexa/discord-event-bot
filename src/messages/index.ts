@@ -1,7 +1,7 @@
-import hello from './hello';
+import create from './create';
 import { messageHandlers } from '../types';
 
 const messages: messageHandlers = {
-    hello,
+    create,
 };
 export default messages;
