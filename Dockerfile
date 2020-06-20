@@ -7,7 +7,6 @@ COPY src/ ./src
 
 RUN yarn
 RUN mkdir ./dist
-RUN ls -la
 RUN yarn transpile
 # removing src since we already trianspiled .ts files
 RUN rm -rf src/
