@@ -1,11 +1,7 @@
-import { Message } from 'discord.js';
 import hello from './hello';
+import { messageHandlers } from '../types';
 
-type messageMap = {
-    [key: string]: (msg: Message) => Promise<string>;
-};
-
-const messages: messageMap = {
+const messages: messageHandlers = {
     hello,
 };
 export default messages;
