@@ -8,9 +8,6 @@
       "moduleResolution": "node",
       "outDir": "dist",
       "baseUrl": ".",
-      "paths": {
-        "@src/*":["src/*"]
-      },
       "noImplicitReturns": true,
       "forceConsistentCasingInFileNames": true,
       "noUnusedLocals": true
